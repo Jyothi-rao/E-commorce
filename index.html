@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CraveCart - Online Restaurant</title>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="logo.jpg" alt="logo">
+      <h1>CraveCart</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 style="font-size: 50px;" >Welcome to CraveCart</h1>
+    <p>Delicious food. Cozy vibes. Fast service. Order online or dine in we’re glad you’re here!</p>
+  </section>
+  <section id="menu">
+  <section style="font-size: 40px;font-family: cursive; display: flex;">MENU</section>
+    <h2>CAKES</h2>
+  </section>
+  <section class="menu">
+    <div class="menu-item">
+      <img src="red-velvet.webp" alt="">
+      <h3>Red Velvet</h3>
+      <p>₹450</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-rv">
+      <button class="order-btn" onclick="addToCart('red-velvet', 450, 'qty-rv')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="creamy fudge.webp" alt="">
+      <h3>Creamy Fudge</h3>
+      <p>₹250</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-cf">
+      <button class="order-btn" onclick="addToCart('Creamy Fudge', 250, 'qty-cf')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="belgian-cheesecake_1.webp" alt="">
+      <h3>Belgian Cheesecake</h3>
+      <p>₹400</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-bc">
+      <button class="order-btn" onclick="addToCart('belgian-cheesecake', 400, 'qty-bc')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="black-forest.webp" alt="">
+      <h3>Black Forect</h3>
+      <p>₹520</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-bf">
+      <button class="order-btn" onclick="addToCart('black-forest', 520, 'qty-bf')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="chocolate-cream-cake.webp" alt="">
+      <h3>Chocolate Cream cake</h3>
+      <p>₹480</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-ccc">
+      <button class="order-btn" onclick="addToCart('chocolate-cream-cake', 480, 'qty-ccc')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="chocolate.jpg" alt="">
+      <h3>Choco Loaded</h3>
+      <p>₹600</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-cl">
+      <button class="order-btn" onclick="addToCart('Choco Loaded', 600, 'qty-cl')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="cup.webp" alt="">
+      <h3>Choco filled cupcake</h3>
+      <p>₹180</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-cfcc">
+      <button class="order-btn" onclick="addToCart('Choco filled cupcake', 220, 'qty-cfcc')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="rose-paradise.webp" alt="">
+      <h3>Rose Paradise</h3>
+      <p>₹600</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-rp">
+      <button class="order-btn" onclick="addToCart('black-forest', 600, 'qty-rp')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="midnight-truffle-cream-cake.webp" alt="">
+      <h3>Truffle cream cake</h3>
+      <p>₹610</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-tcc">
+      <button class="order-btn" onclick="addToCart('Truffle cream cake', 610, 'qty-tcc')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="elysian-gateau.webp" alt="">
+      <h3>Elysian</h3>
+      <p>₹580</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-el">
+      <button class="order-btn" onclick="addToCart('Elysian', 580, 'qty-el')">Add</button>
+    </div>
+  </section>
+
+
+  <section id="menu">
+  <h2>Beverages</h2>
+  </section>
+  <section class="menu">
+    <div class="menu-item">
+      <img src="thumbsup.jpeg" alt="">
+      <h3>Thumbsup</h3>
+      <p>120</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-tu">
+      <button class="order-btn" onclick="addToCart('Thumbsup', 120, 'qty-tu')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="coco-cola.jpeg" alt="">
+      <h3>Coca-Cola</h3>
+      <p>₹120</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-cc">
+      <button class="order-btn" onclick="addToCart('Coca-Cola', 120, 'qty-cc')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="fanta.jpeg" alt="">
+      <h3>Fanta</h3>
+      <p>₹120</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-ft">
+      <button class="order-btn" onclick="addToCart('Fanta', 120, 'qty-ft')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="choco shake.jpeg" alt="">
+      <h3>Choco Shake</h3>
+      <p>₹150</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-cs">
+      <button class="order-btn" onclick="addToCart('Choco Shake', 150, 'qty-cs')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="black currant.jpeg" alt="">
+      <h3>Black Currant</h3>
+      <p>₹180</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-bckc">
+      <button class="order-btn" onclick="addToCart('black Currant', 120, 'qty-bckc')">Add</button>
+    </div>
+  </section>
+
+  <section id="menu">
+  <h2>Burgers</h2>
+  </section>
+  <section class="menu">
+    <div class="menu-item">
+      <img src="Chicken burger.jpeg" alt="">
+      <h3>Chicken Burger</h3>
+      <p>140</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-CB">
+      <button class="order-btn" onclick="addToCart('Chicken Burger', 120, 'qty-CB')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="Double Chicken burger.jpeg" alt="">
+      <h3>Double Chicken Burger</h3>
+      <p>200</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-DCB">
+      <button class="order-btn" onclick="addToCart('Double Chicken Burger', 180, 'qty-DCB')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="Hamburger.jpeg" alt="">
+      <h3>HamBurger</h3>
+      <p>150</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-HB">
+      <button class="order-btn" onclick="addToCart('HamBurger', 150, 'qty-HB')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="veggie burger.jpeg" alt="">
+      <h3>Veggie Burger</h3>
+      <p>120</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-vgB">
+      <button class="order-btn" onclick="addToCart('Veggie Burger', 120, 'qty-vgB')">Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="smashburger.jpeg" alt="">
+      <h3>SmashBurger</h3>
+      <p>160</p>
+      <input type="number" class="quantity" min="1" value="1" id="qty-SB">
+      <button class="order-btn" onclick="addToCart('SmashBurger', 160, 'qty-SB')">Add</button>
+    </div>
+  </section>
+  <section>
+    <div id="summary">
+      <div id="selected-items">Selected Items: None</div>
+      <div id="total-display">Total: ₹0</div>
+      <button class="order-btn" onclick="clearCart()">Clear Cart</button>
+      <button class="order-btn" onclick="showCartPopup()">View Summary</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="background-color: #932727; display: inline-block; border-radius: 10px; padding: 2px;">&nbsp;Contact Us&nbsp;</h2>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Email:</strong> support@CraveCart.com</p>
+    <p><strong>Address:</strong> 123 Food Street, Flavor Town, India</p>
+
+    <h3 style="background-color: #932727; display: inline-block; padding: 3px; border-radius: 10px;">&nbsp;Feedback&nbsp;</h3>
+    <form onsubmit="submitFeedback(event)">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Feedback" rows="4" required></textarea>
+      <button type="submit" class="order-btn">Submit</button>
+    </form>
+  </section>
+
+  <div class="popup-overlay" id="popupOverlay"></div>
+  <div class="popup" id="cartPopup">
+    <h3>Cart Summary</h3>
+    <ul id="popupList"></ul>
+    <p id="popupTotal"></p>
+    <button class="order-btn" onclick="showOrderForm()">Place Order</button>
+    <button class="order-btn" onclick="closePopup()">Close</button>
+  </div>
+
+  <div class="order-form" id="orderForm">
+    <h3>Place Your Order</h3>
+    <form onsubmit="placeOrder(event)">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Address" required />
+      <button type="submit" class="order-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
